@@ -1,0 +1,431 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>KPI · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="timeSetting.html" />
+    
+    
+    <link rel="prev" href="mode.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Geo-Analysis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../initialLoad.html">
+            
+                <a href="../initialLoad.html">
+            
+                    
+                    Initial Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Control Page
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="mode.html">
+            
+                <a href="mode.html">
+            
+                    
+                    mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="KPI.html">
+            
+                <a href="KPI.html">
+            
+                    
+                    KPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="timeSetting.html">
+            
+                <a href="timeSetting.html">
+            
+                    
+                    timeSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="condition.html">
+            
+                <a href="condition.html">
+            
+                    
+                    condition
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Optimization
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../optimization/initialLoad.html">
+            
+                <a href="../../optimization/initialLoad.html">
+            
+                    
+                    Initial Load
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >KPI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kpi">KPI</h1>
+<p>Receive KPI data after selecting modePart</p>
+<h2 id="data-structure">Data structure</h2>
+<pre><code class="lang-javascript">    [
+        {
+            categoryId: <span class="hljs-number">1104001</span>,
+            categoryName: <span class="hljs-string">&quot;Coverage&quot;</span>,
+            categoryVisible: <span class="hljs-literal">true</span>,
+            kpiAnalysisGroups: [
+                {
+                    kpiGroupId: <span class="hljs-number">1204001</span>,
+                    kpiGroupName: <span class="hljs-string">&quot;Average RSRP/RSRQ (Best)&quot;</span>,
+                    kpiGroupVisible: <span class="hljs-literal">true</span>,
+                    criteriaPartId: <span class="hljs-number">42100</span>,
+                    criteriaTimeConfigId: <span class="hljs-number">1002</span>,
+                    criteriaScopeConfigId: <span class="hljs-number">2401</span>,
+                    criteriaConditionConfigId: <span class="hljs-number">0</span>
+                    kpiAnalysisList: [
+                        {
+                            kpiAnalysisId: <span class="hljs-number">13040001</span>
+                            kpiAnalysisName: <span class="hljs-string">&quot;Best Cell Average RSRP - All MR (dBm)&quot;</span>
+                            kpiAnalysisVisible: <span class="hljs-literal">true</span>
+                            comPartId: <span class="hljs-number">1</span>
+                            comMapObjectId: <span class="hljs-number">101</span>
+                            comReportObjectId: <span class="hljs-number">201</span>
+                            elementUnit: <span class="hljs-string">&quot;dBm&quot;</span>
+                        }
+                        ...
+                    ]
+                }
+                ...
+            ]
+        }
+        ...
+    ]
+</code></pre>
+<h2 id="quick-start">Quick Start</h2>
+<p><img src="img/QSKPI.png" alt="QSKPI">
+<img src="img/QSKPI_Dropdown.png" alt="QSKPI Dropdown"></p>
+<h3 id="flow">Flow</h3>
+<p><img src="img/QSKPIFlow.png" alt="QSKPI Flow"></p>
+<h2 id="deep-dive">Deep Dive</h2>
+<p><img src="img/DDKPI.png" alt="DDKPI"></p>
+<h3 id="flow">Flow</h3>
+<p><img src="img/DDKPIFlow.png" alt="DDKPIFlow"></p>
+<h2 id="update-criteria-configs">Update criteria configs</h2>
+<p>Every KPI group has a set of criteria configs: time/scope/condition</p>
+<p>Get supported time mode: <em><code>/rest/criteria-service/time/getById?id=${criteriaTimeConfigId}</code></em></p>
+<p>Get scope data: <em><code>/rest/criteria-service/scope/getById?id=${criteriaScopeConfigId}</code></em></p>
+<p>Get condition data: <em><code>/rest/criteria-service/condition/getById?id=${criteriaConditionConfigId}</code></em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mode.html" class="navigation navigation-prev " aria-label="Previous page: mode">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="timeSetting.html" class="navigation navigation-next " aria-label="Next page: timeSetting">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KPI","level":"1.2.2.2","depth":3,"next":{"title":"timeSetting","level":"1.2.2.3","depth":3,"path":"geo-analysis/controlPage/timeSetting.md","ref":"geo-analysis/controlPage/timeSetting.md","articles":[]},"previous":{"title":"mode","level":"1.2.2.1","depth":3,"path":"geo-analysis/controlPage/mode.md","ref":"geo-analysis/controlPage/mode.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"geo-analysis/controlPage/KPI.md","mtime":"2020-03-10T03:49:14.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T10:44:38.800Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
